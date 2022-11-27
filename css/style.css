@@ -118,25 +118,31 @@ body {
   font-size: 45px;
 }
 
-.trends h3 {
+.main {
+  flex: 1;
+}
+
+.trends {}
+
+.trends__head {
   text-align: center;
   padding: 40px 0;
 }
 
 .trends__now {
   display: flex;
-  justify-content: space-between;
-
+  align-items: center;
 }
 
-.trend__card {
-  flex: 0 25%;
-  margin: 0 auto;
+.now__card {
+  flex: 1 25%;
 }
 
-.main {
-  flex: 1;
-}
+.last_card__bg{}
+
+.last_card__content {}
+
+.card__tags {}
 
 .footer {
   flex: 0;
