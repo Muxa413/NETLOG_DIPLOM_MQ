@@ -14,11 +14,9 @@
     <img class="header__image" src="/img/banner-bg.jpg" alt="banner">
     <div class="container">
       <div class="header__cap">
-        <div class="cap__logo">
-          <a href="#">
-            <img class="cap__logo_img" src="/svg/noemi-logo.svg" alt="logo" width="160px">
-          </a>
-        </div>
+        <a class="cap__logo" href="#">
+          <img class="logo_img" src="/svg/noemi-logo.svg" alt="logo" width="160px">
+        </a>
         <nav class="cap__menu">
           <ul class="menu__links">
             <li><a href="#" class="menu__link">Главная</a></li>
@@ -30,34 +28,99 @@
           </ul>
         </nav>
       </div>
-      <h1 class="header__text">
-        Блог о творчестве, спорте, и образе жизни
-      </h1>
+      <div class="header__text">
+        <h1>
+          Блог о творчестве, спорте, и образе жизни
+        </h1>
+      </div>
     </div>
   </header>
 
-  <main class="main">
-    <section class="trends">
-      <h3 class="trends__head">Сейчас в тренде</h3>
-      <div class="trends__now">
-        <article class="now__card">
-          <img class="card__bg" src="/img/trend1.jpg" alt="trend1" width="200">
-          <div class="card__content">
-            <ul class="card__tags">
+  <aside class="trends">
+    <h2 class="trends__head">Сейчас в тренде</h2>
+    <div class="trends__now">
+
+      <section class="trend__card">
+        <img class="card__bg" src="/img/trend1.jpg" alt="trend1">
+        <article class="card__content">
+          <nav>
+            <ul class="radio__tags">
               <li>
-                <input type="checkbox" id="tags-travel">
+                <input type="radio" id="tags-travel">
                 <label for="tags-travel">Travel</label>
               </li>
               <li>
-                <input type="checkbox" id="tags-interior">
+                <input type="radio" id="tags-interior">
                 <label for="tags-interior">Interior</label>
               </li>
             </ul>
-            <h3>Сейчас в тренде: Cад на подоконнике</h3>
-          </div>
+          </nav>
+          <h2>
+            Сейчас в тренде: Cад на подоконнике
+          </h2>
         </article>
-      </div>
-    </section>
+      </section>
+      <section class="trend__card">
+        <img class="card__bg" src="/img/trend2.jpg" alt="trend4">
+        <article class="card__content">
+          <nav>
+            <ul class="radio__tags">
+              <li>
+                <input type="radio" id="tags-travel">
+                <label for="tags-travel">Food</label>
+              </li>
+            </ul>
+          </nav>
+          <h2>
+            сыры на красивых картинках из интернета: какие они на вкус?
+          </h2>
+        </article>
+      </section>
+      <section class="trend__card">
+        <img class="card__bg" src="/img/trend3.jpg" alt="trend4">
+        <article class="card__content">
+          <nav>
+            <ul class="radio__tags">
+              <li>
+                <input type="radio" id="tags-travel">
+                <label for="tags-travel">lifestyle</label>
+              </li>
+              <li>
+                <input type="radio" id="tags-interior">
+                <label for="tags-interior">Travel</label>
+              </li>
+            </ul>
+          </nav>
+          <h2>
+            СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ
+          </h2>
+        </article>
+      </section>
+      <section class="trend__card">
+        <img class="card__bg" src="/img/trend4.jpg" alt="trend4">
+        <article class="card__content">
+          <nav>
+            <ul class="radio__tags">
+              <li>
+                <input type="radio" id="tags-travel">
+                <label for="tags-travel">Food</label>
+              </li>
+              <li>
+                <input type="radio" id="tags-interior">
+                <label for="tags-interior">Health</label>
+              </li>
+            </ul>
+          </nav>
+          <h2>
+            Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?
+          </h2>
+        </article>
+      </section>
+
+    </div>
+  </aside>
+
+  <main class="main">
     <section class="posts">
       <div class="last_post">
         <article class="last_post__card">
@@ -77,11 +140,13 @@
           </div>
         </article>
       </div>
-      <aside>
-        
-      </aside>
     </section>
   </main>
+
+
+  <aside>
+
+  </aside>
 
   <footer class="footer">
     <p>Copyright &copy;2009–2019 City Blog LLC.</p>

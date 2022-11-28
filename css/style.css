@@ -32,17 +32,26 @@ li {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   text-transform: uppercase;
   font-weight: 700;
 }
 
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
 body {
   height: 100vh;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   display: flex;
   flex-direction: column;
@@ -50,11 +59,23 @@ body {
   box-sizing: border-box;
 }
 
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  z-index: 3;
+}
+
 .header {
   flex: 0;
   position: relative;
   color: #fff;
   z-index: 1;
+
+  height: 50vh;
 }
 
 .header::before {
@@ -77,15 +98,6 @@ body {
   z-index: 1;
 }
 
-.container {
-  position: relative;
-  max-width: 1200px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
-  z-index: 3;
-}
-
 .header__cap {
   display: flex;
   justify-content: space-between;
@@ -93,7 +105,11 @@ body {
   padding-top: 28px;
 }
 
-.cap__logo_img {
+.cap__logo {
+  display: block;
+}
+
+.logo_img {
   width: 184px;
 }
 
@@ -115,34 +131,84 @@ body {
   margin: 0 auto;
   text-align: center;
   padding: 120px 0 140px;
-  font-size: 45px;
 }
-
-.main {
-  flex: 1;
-}
-
-.trends {}
 
 .trends__head {
   text-align: center;
-  padding: 40px 0;
+
+  padding: 5vh;
 }
 
 .trends__now {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 5px;
 }
 
-.now__card {
-  flex: 1 25%;
+.trend__card {
+  position: relative;
+  width: 25vw;
+  flex: 1;
+
+  height: 38vh;
 }
 
-.last_card__bg{}
+.trend__card::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
 
-.last_card__content {}
+.card__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
 
-.card__tags {}
+.card__content {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  z-index: 3;
+  color: #fff;
+  border: 4px solid rgba(218, 165, 32, 0.3);
+  padding: 10% 6%;
+}
+
+.radio__tags {
+  display: flex;
+  gap: 15px;
+  font-weight: 700;
+  color: rgba(218, 165, 32, 0.7);
+  padding-bottom: 3%;
+}
+
+.radio__tags input {
+  display: none;
+}
+
+.radio__tags label {
+  cursor: pointer;
+}
+
+.card__content h2 {}
+
+
+
+.main {
+  flex: 1;
+}
 
 .footer {
   flex: 0;
