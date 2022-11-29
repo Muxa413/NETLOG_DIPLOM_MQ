@@ -183,7 +183,8 @@ body {
   z-index: 3;
   color: #fff;
   border: 4px solid rgba(218, 165, 32, 0.3);
-  padding: 10% 6%;
+  padding: 4%;
+  overflow: hidden;
 }
 
 .radio__tags {
@@ -205,9 +206,36 @@ body {
 .card__content h2 {}
 
 
-
 .main {
   flex: 1;
+}
+
+.main .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  flex: 1;
+}
+
+.post {
+  display: flex;
+}
+
+.post__image {}
+
+.post__content {
+  margin: 0 4%;
+}
+
+.posts__aside {
+  flex: 0 20%;
 }
 
 .footer {
