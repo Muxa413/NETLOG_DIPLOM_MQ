@@ -11,20 +11,20 @@
 <body>
 
   <header class="header">
-    <img class="header__image" src="/img/banner-bg.jpg" alt="banner">
+    <img class="header__bg" src="/img/banner-bg.jpg" alt="banner">
     <div class="container">
       <div class="header__cap">
-        <a class="cap__logo" href="#">
-          <img class="logo_img" src="/svg/noemi-logo.svg" alt="logo" width="160px">
+        <a class="header__logo" href="#">
+          <img class="header__img" src="/svg/noemi-logo.svg" alt="logo" width="160px">
         </a>
-        <nav class="cap__menu">
-          <ul class="menu__links">
-            <li><a href="#" class="menu__link">Главная</a></li>
-            <li><a href="#" class="menu__link">Посты</a></li>
-            <li><a href="#" class="menu__link">Статьи</a></li>
-            <li><a href="#" class="menu__link">Теги</a></li>
-            <li><a href="#" class="menu__link">Темы</a></li>
-            <li><a href="#" class="menu__link">Контакты</a></li>
+        <nav class="header__menu">
+          <ul class="header__links">
+            <li><a href="#" class="header__link">Главная</a></li>
+            <li><a href="#" class="header__link">Посты</a></li>
+            <li><a href="#" class="header__link">Статьи</a></li>
+            <li><a href="#" class="header__link">Теги</a></li>
+            <li><a href="#" class="header__link">Темы</a></li>
+            <li><a href="#" class="header__link">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -40,16 +40,14 @@
     <h2 class="trends__head">Сейчас в тренде</h2>
     <div class="trends__now">
       <section class="trend__card">
-        <img class="card__bg" src="/img/trend1.jpg" alt="trend1">
-        <article class="card__content">
+        <img class="trend__bg" src="/img/trend1.jpg" alt="trend1">
+        <article class="trend__content">
           <nav>
-            <ul class="radio__tags">
+            <ul class="checkbox__tags">
               <li>
-                <input type="radio" id="tags-travel">
                 <label for="tags-travel">Travel</label>
               </li>
               <li>
-                <input type="radio" id="tags-interior">
                 <label for="tags-interior">Interior</label>
               </li>
             </ul>
@@ -60,13 +58,12 @@
         </article>
       </section>
       <section class="trend__card">
-        <img class="card__bg" src="/img/trend2.jpg" alt="trend4">
-        <article class="card__content">
+        <img class="trend__bg" src="/img/trend2.jpg" alt="trend4">
+        <article class="trend__content">
           <nav>
-            <ul class="radio__tags">
+            <ul class="checkbox__tags">
               <li>
-                <input type="radio" id="tags-travel">
-                <label for="tags-travel">Food</label>
+                <label for="tags-food">Food</label>
               </li>
             </ul>
           </nav>
@@ -76,17 +73,15 @@
         </article>
       </section>
       <section class="trend__card">
-        <img class="card__bg" src="/img/trend3.jpg" alt="trend4">
-        <article class="card__content">
+        <img class="trend__bg" src="/img/trend3.jpg" alt="trend4">
+        <article class="trend__content">
           <nav>
-            <ul class="radio__tags">
+            <ul class="checkbox__tags">
               <li>
-                <input type="radio" id="tags-travel">
-                <label for="tags-travel">lifestyle</label>
+                <label for="tags-lifestyle">lifestyle</label>
               </li>
               <li>
-                <input type="radio" id="tags-interior">
-                <label for="tags-interior">Travel</label>
+                <label for="tags-travel">Travel</label>
               </li>
             </ul>
           </nav>
@@ -96,17 +91,15 @@
         </article>
       </section>
       <section class="trend__card">
-        <img class="card__bg" src="/img/trend4.jpg" alt="trend4">
-        <article class="card__content">
+        <img class="trend__bg" src="/img/trend4.jpg" alt="trend4">
+        <article class="trend__content">
           <nav>
-            <ul class="radio__tags">
+            <ul class="checkbox__tags">
               <li>
-                <input type="radio" id="tags-travel">
-                <label for="tags-travel">Food</label>
+                <label for="tags-food">Food</label>
               </li>
               <li>
-                <input type="radio" id="tags-interior">
-                <label for="tags-interior">Health</label>
+                <label for="tags-health">Health</label>
               </li>
             </ul>
           </nav>
@@ -125,14 +118,12 @@
           <img class="post__image" src="/img/last-post1.jpg" alt="last-post1">
           <article class="post__content">
             <nav>
-              <ul class="radio__tags">
+              <ul class="checkbox__tags">
                 <li>
-                  <input type="radio" id="tags-travel">
                   <label for="tags-travel">Travel</label>
                 </li>
                 <li>
-                  <input type="radio" id="tags-interior">
-                  <label for="tags-interior">Health</label>
+                  <label for="tags-health">Health</label>
                 </li>
               </ul>
             </nav>
@@ -149,14 +140,12 @@
           <img class="post__image" src="/img/last-post1.jpg" alt="last-post1">
           <article class="post__content">
             <nav>
-              <ul class="radio__tags">
+              <ul class="checkbox__tags">
                 <li>
-                  <input type="radio" id="tags-travel">
                   <label for="tags-travel">Travel</label>
                 </li>
                 <li>
-                  <input type="radio" id="tags-interior">
-                  <label for="tags-interior">Health</label>
+                  <label for="tags-health">Health</label>
                 </li>
               </ul>
             </nav>
@@ -169,10 +158,11 @@
             </p>
           </article>
         </section>
-      </div>      
+      </div>
+
       <aside class="aside">        
         <h3>новые посты</h3>
-        <div class="posts__aside">          
+        <div class="aside__posts">          
           <section class="post">
             <img class="post__image" src="/img/last-post1.jpg" alt="last-post1">
             <article class="post__content">
@@ -192,6 +182,59 @@
             </article>
           </section>
         </div>
+
+        <form class="aside__search" action="#">
+            <input class="search" type="text" placeholder="Найти...">
+            <button class="submit" type="submit"></button>
+        </form>  
+
+        <h3>Рассылка</h3>  
+        <form class="aside__mailing" action="#">          
+          <input class="search" type="email" placeholder="Ваш email адрес">
+          <button class="submit" type="submit">подписаться</button>
+        </form>
+
+        <h3>Теги</h3>
+        <form action="">
+          <nav>
+            <ul class="checkbox__tags aside__tags">
+              <li>
+                <input type="checkbox" id="tags-fashion">
+                <label for="tags-fashion">fashion</label>
+              </li>
+              <li>
+                <input type="checkbox" id="tags-music">
+                <label for="tags-music">music</label>
+              </li>              
+              <li>
+                <input type="checkbox" id="tags-lifestyle">
+                <label for="tags-lifestyle">lifestyle</label>
+              </li>
+              <li>
+                <input type="checkbox" id="tags-art">
+                <label for="tags-art">art</label>
+              </li>
+              <li>
+                <input type="checkbox" id="tags-interior">
+                <label for="tags-interior">interior</label>
+              </li>
+              <li>
+                <input type="checkbox" id="tags-travel">
+                <label for="tags-travel">travel</label>
+              </li>
+              <li>
+                <input type="checkbox" id="tags-food">
+                <label for="tags-food">food</label>
+              </li>
+              <li>
+                <input type="checkbox" id="tags-health">
+                <label for="tags-health">health</label>
+              </li>
+            </ul>
+          </nav>
+        </form>
+
+
       </aside>
 
     </div>
