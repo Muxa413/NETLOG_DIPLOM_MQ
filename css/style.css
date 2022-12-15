@@ -192,10 +192,138 @@ body {
   overflow: hidden;
 }
 
+.main {
+  flex: 1;
+}
+
+.main .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.posts {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 4%;
+}
+
+.post {
+  display: flex;
+  flex: 4;
+  gap: 2%;
+}
+
+.post__image {
+  max-width: 40%;
+  max-height: 40%;
+  flex: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.post__content {
+  max-width: 380px;
+  flex: 1;
+  font-size: 15px;
+}
+
+.post__data-author {
+  color: #888;
+  font-size: 12px;
+}
+
+.post__data-author span {
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+  margin: 6% 4% 8%;
+}
+
+.aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.aside__head {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.aside__head::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -16px;
+  border-bottom: 4px solid rgba(218, 165, 32, 0.7);
+}
+
+.aside__posts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aside__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin: 10% 0;
+}
+
+.search {
+  flex: 1;
+  height: 100%;
+  border: none;
+  background-color: aliceblue;
+  padding: 2% 4%;
+}
+
+.submit {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  flex: 0 40px;
+  height: 100%;
+  border: none;
+  background-color: burlywood;
+}
+
+.aside__mailing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.aside__tags label {
+  border: 3px solid lightgrey;
+  padding: 2px 4px;
+}
+
+/*
+.aside__tags label + .aside__tags input:checked {
+  border: 2px solid red;
+} __ДОДЕЛАТЬ КЛИК__
+*/
+
 .checkbox__tags {
   font-size: 14px;
-  display: flex; 
-  flex-wrap: wrap; 
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   font-weight: 700;
   color: rgba(218, 165, 32, 0.7);
@@ -210,127 +338,42 @@ body {
   cursor: pointer;
 }
 
-.aside__tags label {    
-  border: 3px solid lightgrey;
-  padding: 2px 4px;
-}
+.aside__themes {}
 
-
-.aside__tags label + .aside__tags input:checked  {
-  border: 2px solid red;
-}
-
-.main {
-  flex: 1;
-}
-
-.main .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.posts {  
-  flex: 3;
+.themes__list {
   display: flex;
   flex-direction: column;
-  gap: 60px;  
-  margin-bottom: 4%;
-}
-
-.post {
-  display: flex;
-  flex: 4;
-  gap: 2%;
-}
-
-.post__image {
-  max-width: 40%;
-  max-height: 40%;
-  flex: 0;  
-  object-fit: contain;  
-  object-position: center;
-}
-
-.post__content {
-  max-width: 380px;  
-  flex: 1;
-  font-size: 15px;  
-}
-
-.post__data-author {
-  color: #888;
-  font-size: 12px;
-}
-
-.post__data-author span { 
-  display: inline-block; 
-  color: #000;
-  font-weight: bold; 
-  margin: 10% 4% 12%;
-}
-
-.aside {
-  flex: 1;  
-}
-
-.aside > h3 {  
-  position: relative;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.aside > h3::before { 
-  position: absolute; 
-  content: "";
-  width: 80px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  bottom: -16px;
-  border-bottom: 4px solid rgba(218, 165, 32, 0.7);
-}
-
-.aside__posts {  
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.aside__search {
-  display: flex;
   justify-content: space-between;
-  align-items: center; 
-  height: 40px;
-  margin: 10% 0;
+  gap: 1px;
 }
 
-.search {
-  flex: 1;  
-  height: 100%;
-  border: none;
-  background-color: aliceblue;
-  padding: 2% 4%;
-}
-.submit {
-  color: #fff;
+.themes__tab {
+  text-transform: capitalize;
+  font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  flex: 0 40px; 
-  height: 100%;
-  border: none;
-  background-color: burlywood;
+  color: #000;
+  border-bottom: 1px solid #cecece;
+  padding: 4% 0;
+  position: relative;
+
 }
 
-.aside__mailing {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+.themes__tab sup {
+  margin-left: 2px;
+  font-size: 12px;
+  color: orange;
 }
+
+.themes__tab input {
+  /*  display: none;*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+
 
 .shop {
   width: 100%;
@@ -343,6 +386,7 @@ body {
   flex: 0;
   text-align: center;
 }
+
 
 
 @media (max-width: 900px) {
@@ -365,5 +409,5 @@ body {
     flex-wrap: wrap;
   }
 
-  
+
 }
