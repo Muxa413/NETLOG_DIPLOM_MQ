@@ -139,7 +139,8 @@ body {
   justify-content: space-between;
 }
 
-.trends__head {
+.trends__head,
+.shop__head {
   flex: 0;
   text-align: center;
   padding: 3% 0;
@@ -338,13 +339,11 @@ body {
   cursor: pointer;
 }
 
-.aside__themes {}
-
 .themes__list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1px;
+  gap: 2px;
 }
 
 .themes__tab {
@@ -372,15 +371,45 @@ body {
   bottom: 0;
 }
 
-
-
-
-.shop {
+.shop__cards {
   width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: seagreen;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+
 }
+
+.shop__card {
+  flex: 0 30%;
+  padding: 2%;
+  border: 2px solid gold;
+}
+
+.shop__card > img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.shop__article {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 4% auto;
+}
+
+.shop__text {
+  flex: 1;
+}
+
+.shop__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 .footer {
   flex: 0;
